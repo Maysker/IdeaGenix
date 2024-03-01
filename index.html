@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Ideas Generator</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Content Ideas Generator</h1>
+        <form id="contentForm">
+            <div class="form-group">
+                <label for="topic">Topic:</label>
+                <input type="text" class="form-control" id="topic" name="topic" required>
+            </div>
+            <div class="form-group">
+                <label for="keywords">Keywords:</label>
+                <input type="text" class="form-control" id="keywords" name="keywords" required>
+            </div>
+            <div class="form-group">
+                <label for="contentType">Content Type:</label>
+                <select class="form-control" id="contentType" name="contentType">
+                    <option value="blog">Blog</option>
+                    <option value="video">Video</option>
+                    <option value="socialMedia">Social Media</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="audience">Target Audience:</label>
+                <input type="text" class="form-control" id="audience" name="audience">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="submitForm()">Generate Ideas</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+    <div id="ideasResult" class="container mt-4 p-3 border bg-light">
+        <!-- Content will be added here -->
+    </div>
+    <div id="trendsResult" class="container mt-4 p-3 border bg-light"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
