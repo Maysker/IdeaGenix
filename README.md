@@ -32,6 +32,10 @@ cd yourprojectname
 ## Start the local server (for XAMPP)
 php -S localhost:8000
 
+## Important Note:
+
+Please be aware that there might be a delay in receiving responses from the AI service, typically ranging from 5 to 6 seconds. This delay is due to the utilization of the free tier of the service, which may have limitations on processing speed and resources. We appreciate your patience and understanding.
+
 
 ## Usage
 
